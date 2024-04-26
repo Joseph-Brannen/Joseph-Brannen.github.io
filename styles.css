@@ -1,10 +1,13 @@
 .card {
     background-color: red;
-    height: 25vh;
-    width: 25vw;
+    height: 40vh;
+    width: 40vw;
 }
 
-#modalcontainerone {
+#modalcontainerone,
+#modalcontainertwo,
+#modalcontainerthree,
+#modalcontainerfour {
     display: none;
     position: absolute;
     top: 0%;
@@ -14,11 +17,14 @@
     background-color: rgba(49, 48, 48, 0.5);
 }
 
-#modalone {
+#modalone,
+#modaltwo,
+#modalthree,
+#modalfour {
     position: fixed;
     top: 20%;
-    left: 10%;
-    right: 10%;
+    left: 37%;
+    right: 37%;
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr;
