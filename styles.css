@@ -1,5 +1,13 @@
+body {
+    background-color: #0d1b2a; 
+}
+
+.offcanvas-end {
+    background-color: #1b263b;
+}
+
 .card {
-    background-color: red;
+    background-color: #e0e1dd;
     height: 40vh;
     width: 40vw;
 }
