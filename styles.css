@@ -1,3 +1,7 @@
+* {
+    scroll-padding-top: 3rem;
+}
+
 body {
     background-color: #0d1b2a; 
     font-family: "Inter", sans-serif;
@@ -14,6 +18,27 @@ body {
 
 .offcanvas-end {
     background-color: #1b263b;
+}
+
+#intro {
+    height: 100vh;
+    padding-top: 25vh;
+}
+
+#intro button {
+    border-color: #5fa;
+}
+
+#intro button:hover {
+    background-color: rgba(85, 255, 170, .25);
+}
+
+#intro-link {
+    color: rgba(85, 255, 170, .5);
+}
+
+#intro-link:hover {
+    color: rgba(85, 255, 170, 1);
 }
 
 .card {
@@ -58,3 +83,15 @@ body {
 footer {
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
