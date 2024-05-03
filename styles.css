@@ -69,6 +69,14 @@ body {
     height: 200px;
     width: 200px;
     margin: 0 auto;
+    transition: transform .7s;
+}
+
+#image-one:hover,
+#image-two:hover,
+#image-three:hover,
+#image-four:hover {
+    transform: scale(1.15) translateY(-10px);
 }
 
 #btnone,
