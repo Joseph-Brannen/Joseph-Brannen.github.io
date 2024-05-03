@@ -7,6 +7,10 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+
+
+
+
 #logo {
     background-color: #5fa;
     border-radius: 50%;
@@ -19,6 +23,10 @@ body {
 .offcanvas-end {
     background-color: #1b263b;
 }
+
+
+
+
 
 #intro {
     height: 100vh;
@@ -41,6 +49,12 @@ body {
     color: rgba(85, 255, 170, 1);
 }
 
+
+
+
+
+
+
 .card {
     background-color: #0d1b2a;
     color: white;
@@ -56,6 +70,37 @@ body {
     width: 200px;
     margin: 0 auto;
 }
+
+#btnone,
+#btntwo,
+#btnthree,
+#btnfour {
+    background-color: #0d1b2a;
+    border: none;
+    color: rgba(85, 255, 170, .5);
+    text-decoration: underline;
+}
+
+#btnone:hover,
+#btntwo:hover,
+#btnthree:hover,
+#btnfour:hover {
+    color: rgba(85, 255, 170, 1);
+}
+
+
+
+
+
+
+footer {
+    color: white;
+}
+
+
+
+
+
 
 #modalcontainerone,
 #modalcontainertwo,
@@ -87,10 +132,6 @@ body {
     border: 2px solid lightgray;
     border-radius: 10px;
     background-color: white;
-}
-
-footer {
-    color: white;
 }
 
 
