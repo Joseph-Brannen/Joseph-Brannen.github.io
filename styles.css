@@ -105,51 +105,38 @@ footer {
     color: white;
 }
 
-
-
-
-
-
-#modalcontainerone,
-#modalcontainertwo,
-#modalcontainerthree,
-#modalcontainerfour {
-    display: none;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 220%;
-    height: 220%;
-    background-color: rgba(49, 48, 48, 0.5);
+.form-control {
+    color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .15);
+    border-color: rgba(255, 255, 255, .3);
 }
 
-#modalone,
-#modaltwo,
-#modalthree,
-#modalfour {
-    position: fixed;
-    top: 20%;
-    left: 37%;
-    right: 37%;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 1rem;
-    justify-items: center;
-    padding-bottom: 3rem;
-    border: 2px solid lightgray;
-    border-radius: 10px;
-    background-color: white;
+.form-control:focus{
+    color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .2);
+    outline: none;
+    border-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 0 3px rgba(255, 255, 255, .5);
+    -moz-box-shadow: 0 0 3px rgba(255, 255, 255, .5);
+    -webkit-box-shadow: 0 0 3px rgba(255, 255, 255, .5);
 }
 
+.form-control::placeholder {
+    color: rgba(255, 255, 255, .7);
+}
 
+#name-error,
+#email-error,
+#message-error {
+    line-height: .5;
+}
 
+#email-error {
+    margin-top: -.9rem;
+}
 
-
-
-
-
-
-
+svg {
+    margin: 0 .75rem;
+}
 
 
