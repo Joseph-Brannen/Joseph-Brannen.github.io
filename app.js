@@ -12,7 +12,7 @@ formDiv.addEventListener( 'click', (e) => {
   email.text = '';
   message.text = '';
   if ( button === e.target && username.value !== '' && email.value !== '' && message.value !== '') {
-    error.innerHTML = "";
+    error.innerHTML = "message submitted.";
   } else if ( button === e.target && username.value === '' && email.value !== '' && message.value !== '' ) {
     e.preventDefault();
     error.innerHTML = "enter a name.";
