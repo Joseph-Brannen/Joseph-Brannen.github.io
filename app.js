@@ -6,33 +6,74 @@ const message = document.querySelector('textarea');
 const error = document.getElementById('error-message');
 const button = document.getElementById('submitbtn');
 
-
 formDiv.addEventListener( 'click', (e) => {
   username.text = '';
   email.text = '';
   message.text = '';
   if ( button === e.target && username.value !== '' && email.value !== '' && message.value !== '') {
-    error.innerHTML = "message submitted.";
+    error.innerHTML = "Message submitted.";
   } else if ( button === e.target && username.value === '' && email.value !== '' && message.value !== '' ) {
     e.preventDefault();
-    error.innerHTML = "enter a name.";
+    error.innerHTML = "Please enter your name.";
+    username.style.borderLeftColor = 'red';
+    username.style.borderLeftWidth = '2px';
+    email.style.borderLeftColor = 'rgba(255, 255, 255, .5)';
+    email.style.borderLeftWidth = '1px';
+    message.style.borderLeftColor = 'rgba(255, 255, 255, .5)';
+    message.style.borderLeftWidth = '1px';
   } else if ( button === e.target && username.value !== '' && email.value === '' && message.value !== '' ) {
     e.preventDefault();
-    error.innerHTML = "enter an email.";
+    error.innerHTML = "Please enter your email.";
+    email.style.borderLeftColor = 'red';
+    email.style.borderLeftWidth = '2px';
+    username.style.borderLeftColor = 'rgba(255, 255, 255, .5)';
+    username.style.borderLeftWidth = '1px';
+    message.style.borderLeftColor = 'rgba(255, 255, 255, .5)';
+    message.style.borderLeftWidth = '1px';
   } else if ( button === e.target && username.value !== '' && email.value !== '' && message.value === '' ) {
     e.preventDefault();
-    error.innerHTML = "enter a message.";
+    error.innerHTML = "Please enter your message.";
+    message.style.borderLeftColor = 'red';
+    message.style.borderLeftWidth = '2px';
+    username.style.borderLeftColor = 'rgba(255, 255, 255, .5)';
+    username.style.borderLeftWidth = '1px';
+    email.style.borderLeftColor = 'rgba(255, 255, 255, .5)';
+    email.style.borderLeftWidth = '1px';
   } else if ( button === e.target && username.value === '' && email.value === '' && message.value !== '' ) {
     e.preventDefault();
-    error.innerHTML = "enter a name.<br>enter an email.";
+    error.innerHTML = "Please enter your name.<br>Please enter your email.";
+    username.style.borderLeftColor = 'red';
+    username.style.borderLeftWidth = '2px';
+    email.style.borderLeftColor = 'red';
+    email.style.borderLeftWidth = '2px';
+    message.style.borderLeftColor = 'rgba(255, 255, 255, .5)';
+    message.style.borderLeftWidth = '1px';
   } else if ( button === e.target && username.value === '' && email.value === '' && message.value === '' ) {
     e.preventDefault();
-    error.innerHTML = "enter a name.<br>enter an email.<br>enter a message.";
+    error.innerHTML = "Please enter your name.<br>Please enter your email.<br>Please enter your message.";
+    username.style.borderLeftColor = 'red';
+    username.style.borderLeftWidth = '2px';
+    email.style.borderLeftColor = 'red';
+    email.style.borderLeftWidth = '2px';
+    message.style.borderLeftColor = 'red';
+    message.style.borderLeftWidth = '2px';
   } else if ( button === e.target && username.value !== '' && email.value === '' && message.value === '' ) {
     e.preventDefault();
-    error.innerHTML = "enter an email.<br>enter a message.";
+    error.innerHTML = "Please enter your email.<br>Please enter your message.";
+    email.style.borderLeftColor = 'red';
+    email.style.borderLeftWidth = '2px';
+    message.style.borderLeftColor = 'red';
+    message.style.borderLeftWidth = '2px';
+    username.style.borderLeftColor = 'rgba(255, 255, 255, .5)';
+    username.style.borderLeftWidth = '1px';
   } else if ( button === e.target && username.value === '' && email.value !== '' && message.value === '' ) {
     e.preventDefault();
-    error.innerHTML = "enter a name.<br>enter a message.";
+    error.innerHTML = "Please enter your name.<br>Please enter your message.";
+    username.style.borderLeftColor = 'red';
+    username.style.borderLeftWidth = '2px';
+    message.style.borderLeftColor = 'red';
+    message.style.borderLeftWidth = '2px';
+    email.style.borderLeftColor = 'rgba(255, 255, 255, .5)';
+    email.style.borderLeftWidth = '1px';
   }
 });
