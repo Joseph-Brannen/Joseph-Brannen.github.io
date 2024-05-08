@@ -106,13 +106,13 @@ footer {
 }
 
 .form-control {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .8);
     background-color: rgba(255, 255, 255, .15);
     border-color: rgba(255, 255, 255, .3);
 }
 
 .form-control:focus{
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .8);
     background-color: rgba(255, 255, 255, .2);
     outline: none;
     border-color: rgba(255, 255, 255, .5);
@@ -122,7 +122,7 @@ footer {
 }
 
 .form-control::placeholder {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .3);
 }
 
 /*
