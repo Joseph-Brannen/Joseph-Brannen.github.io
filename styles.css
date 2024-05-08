@@ -92,7 +92,8 @@ body {
 #btnone:hover,
 #btntwo:hover,
 #btnthree:hover,
-#btnfour:hover {
+#btnfour:hover,
+#submitbtn:hover {
     color: rgba(85, 255, 170, 1);
 }
 
@@ -125,20 +126,40 @@ footer {
     color: rgba(255, 255, 255, .3);
 }
 
-/*
-#name-error,
-#email-error,
-#message-error {
-    line-height: .5;
+#submitbtn {
+    height: fit-content;
+    width: fit-content;
+    background-color: #0d1b2a;
+    padding: .5rem 1rem;
+    border: 1px solid rgba(85, 255, 170, .5);
+    border-radius: 10px;
+    color: rgba(85, 255, 170, .5);
+    letter-spacing: 1px;
+    text-align: center;
 }
 
-#email-error {
-    margin-top: -.9rem;
+#submitbtn:hover {
+    background-color: rgba(85, 255, 170, .1);
 }
-*/
 
 svg {
-    margin: 0 .75rem;
+    /*margin: 0 .75rem;*/
+    transition: transform .7s;
+}
+
+svg:hover {
+    transform: scale(1.25);
+}
+
+#social {
+    background-color: #050c13;
+}
+
+#social a {
+    margin: -1rem .5rem 0rem;
+    text-decoration: none;
+    border: none;
+    color: #050c13;
 }
 
 
