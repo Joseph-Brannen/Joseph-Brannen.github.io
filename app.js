@@ -11,20 +11,28 @@ formDiv.addEventListener( 'click', (e) => {
   email.text = '';
   message.text = '';
   if ( button === e.target && username.value !== '' && email.value !== '' && message.value !== '') {
+    e.preventDefault();
     error.innerHTML = "message submitted.";
   } else if ( button === e.target && username.value === '' && email.value !== '' && message.value !== '' ) {
+    e.preventDefault();
     error.innerHTML = "enter a name.";
   } else if ( button === e.target && username.value !== '' && email.value === '' && message.value !== '' ) {
+    e.preventDefault();
     error.innerHTML = "enter an email.";
   } else if ( button === e.target && username.value !== '' && email.value !== '' && message.value === '' ) {
+    e.preventDefault();
     error.innerHTML = "enter a message.";
   } else if ( button === e.target && username.value === '' && email.value === '' && message.value !== '' ) {
+    e.preventDefault();
     error.innerHTML = "enter a name.<br>enter an email.";
   } else if ( button === e.target && username.value === '' && email.value === '' && message.value === '' ) {
+    e.preventDefault();
     error.innerHTML = "enter a name.<br>enter an email.<br>enter a message.";
   } else if ( button === e.target && username.value !== '' && email.value === '' && message.value === '' ) {
+    e.preventDefault();
     error.innerHTML = "enter an email.<br>enter a message.";
   } else if ( button === e.target && username.value === '' && email.value !== '' && message.value === '' ) {
+    e.preventDefault();
     error.innerHTML = "enter a name.<br>enter a message.";
   }
 });
