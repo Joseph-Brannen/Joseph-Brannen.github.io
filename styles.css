@@ -33,6 +33,16 @@ body {
     padding-top: 25vh;
 }
 
+.first {
+    color: rgba(255, 255, 255, 1);    
+}
+
+.second {
+    color: rgba(255, 255, 255, .8);
+    /*font-size: 3.25rem;*/
+    line-height: 1.2;
+}
+
 #intro button {
     border-color: #5fa;
 }
@@ -42,11 +52,15 @@ body {
 }
 
 #intro-link {
-    color: rgba(85, 255, 170, .5);
+    /*color: rgba(85, 255, 170, .5);*/
+    /*color: rgba(255, 255, 255, .4);*/
+    color: rgba(255, 255, 255, .5);
 }
 
 #intro-link:hover {
-    color: rgba(85, 255, 170, 1);
+    /*color: rgba(85, 255, 170, 1);*/
+    /*color: rgba(255, 255, 255, .8);*/
+    color: rgba(255, 255, 255, .8);
 }
 
 
@@ -79,31 +93,40 @@ body {
     transform: scale(1.15) translateY(-10px);
 }
 
-#btnone,
-#btntwo,
-#btnthree,
-#btnfour {
-    background-color: #0d1b2a;
-    border: none;
-    color: rgba(85, 255, 170, .5);
-    text-decoration: underline;
+.card-title {
+    color: rgba(255, 255, 255, .9);    
 }
 
-#btnone:hover,
-#btntwo:hover,
-#btnthree:hover,
-#btnfour:hover,
-#submitbtn:hover {
-    color: rgba(85, 255, 170, 1);
+.card-text {
+    color: rgba(255, 255, 255, .6);
+}
+
+.img-anchor {
+    text-decoration: none;
 }
 
 
 
 
 
+#separate {
+    height: 2px;
+    width: 100%;
+    padding: 0;
+    border-bottom: .25px solid rgba(255, 255, 255, .25);
+    margin: 0 auto;
+}
 
 footer {
     color: white;
+}
+
+h2 {
+    color: rgba(255, 255, 255, .9);
+}
+
+#contact p {
+    color: rgba(255, 255, 255, .6);
 }
 
 .form-control {
@@ -126,6 +149,14 @@ footer {
     color: rgba(255, 255, 255, .3);
 }
 
+#btnone,
+#btntwo,
+#btnthree,
+#btnfour,
+#btnfive,
+#btnsix,
+#btnseven,
+#btneight,
 #submitbtn {
     height: fit-content;
     width: fit-content;
@@ -138,6 +169,14 @@ footer {
     text-align: center;
 }
 
+#btnone:hover,
+#btntwo:hover,
+#btnthree:hover,
+#btnfour:hover,
+#btnfive:hover,
+#btnsix:hover,
+#btnseven:hover,
+#btneight:hover,
 #submitbtn:hover {
     background-color: rgba(85, 255, 170, .1);
 }
