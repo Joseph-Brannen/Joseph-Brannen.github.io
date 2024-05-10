@@ -188,10 +188,6 @@ svg:hover {
     transform: scale(1.25);
 }
 
-#social {
-    background-color: #050c13;
-}
-
 #social a {
     margin: -1rem .5rem 0rem;
     text-decoration: none;
