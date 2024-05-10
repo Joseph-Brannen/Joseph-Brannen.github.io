@@ -17,6 +17,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
+    <link href="backstory.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@
     <header class="mb-5 container-fluid">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a id="logo" class="navbar-brand text-light" href="#"><img class="navbar" src="logo/favicon-32x32.png" alt="logo"></a>
+                <a id="logo" class="navbar-brand text-light" href="index.html"><img class="navbar" src="logo/favicon-32x32.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,16 +35,16 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 nav-underline pe-3">
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="#portfolio">portfolio</a>
+                                <a class="nav-link text-light" href="index.html#portfolio">portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" aria-current="page" href="backstory.html#about">about me</a>
+                                <a class="nav-link text-light" aria-current="page" href="#about">about me</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="backstory.html#resume">experience</a>
+                                <a class="nav-link text-light" href="#resume">experience</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="#contact">get in touch</a>
+                                <a class="nav-link text-light" href="index.html#contact">get in touch</a>
                             </li>
                         </ul>
                     </div>
@@ -52,19 +53,77 @@
         </nav>
     </header>
 
+    <!--
     <main class="container">
-        <div class="container" id="intro">
-            <div class="row">
-                <p class="display-3 first text-left">Hi, I'm Joe.</p>
-                <p class="fs-1 lead second text-left">I'm a front end web development student seeking my first entry level role.</p>
-                <a id="intro-link" href="#portfolio">View My Work</a>
-            </div>
-       </div>
-
        <div id="portfolio" class="row text-center mb-5">
         <div id="projectone" class="col-12 col-md-6 mb-3">
           <div class="card w-100 h-50">
             <div class="card-body">
+    -->
+    <main class="container">
+        <div class="row">
+            <div id="about" class="col-lg-6 mb-5">
+                <h4 class="mb-3 ps-3">About Me</h4>
+                <p class="mb-3 para">In late 2021, my former boss asked for my help to create an internal CRM and revenue tracking system for our sales team. As I was creating these systems something struck me &#8213; I had never had so much fun in my professional career than I had experienced working on these projects. Although I didn't know it immediatley, my journey into a career change was born.</p>
+                <p class="mb-3 para">As 2022 was drawing to a close I began seeking help from a career coach, and utilizing career assessment tests that kept pointing me to a career in software development. Fortunately, I have many friends who are in this space and I began asking their advice. In August of 2023, after months of seeking professional advice, I chose to pause my sales career in order to pursue learning front-end development full time.</p>   
+                <p class="mb-3 para">Back then, the most basic HTML code confused me, but I enjoyed the challenge, learning, and problem-solving. Thankfully, with the support of my wife, professional mentors, friends, and family I have gone from being a true novice in software development to being prepared to begin my career in this space. Thank you for visiting my website, and I hope to hear from you.</p>
+            </div>
+
+            <div id="resume" class="col-lg-6 px-md-4 px-xl-5">
+                <h4 class="mb-3 ps-4">Experience</h4>
+
+                <div class="mb-3 roles">
+                    <h5 class="mb-1 px-2">Frontend Development Student&#58; Treehouse</h5>
+                    <span class="mb-5 px-2 fs-6">Aug 2023 &#8210; Present</span>
+                    <p class="pt-1 px-2">Completed Treehouse's TechDegree Program for Front End Web Development, and Wes Bos' course on React. Skills learned include HTML, CSS, JavaScript, Sass, the Terminal, and Bootstrap.</p>
+                </div>
+
+                <div class="mb-3 roles">
+                    <h5 class="mb-1 px-2">National Account Manager&#58; RDCA</h5>
+                    <span class="mb-5 px-2 fs-6">Jan 2021 &#8210; Jul 2023</span>
+                    <p class="pt-1 px-2">Created an internal CRM and revenue tracking system for use on our sales team. Key traits for this work included strong analytical skills, attention-to-detail, organization, and problem-solving.</p>
+                </div>
+
+                <div class="mb-3 roles">
+                    <h5 class="mb-1 px-2">Account Development Representative&#58; MuleSoft</h5>
+                    <span class="mb-5 px-2 fs-6">Apr 2019 &#8210; Aug 2020</span>
+                    <p class="pt-1 px-2">This role introduced me to the world of API-led integration, and gave me an understanding of the the dilemmas CIO's are facing to prevent data silos throughout their organizations.</p>
+                </div>
+
+                <div class="mb-3 roles">
+                    <h5 class="mb-1 px-2">Regional Account Manager&#58; Granite Telecommunications</h5>
+                    <span class="mb-5 px-2 fs-6">May 2018 &#8210; Mar 2019</span>
+                    <p class="pt-1 px-2">This job required making dozens of calls to potential clients every day. In order to succeed, keeping track of prospect interactions was crucial which required extensive planning to not let data slip through the cracks.</p>
+                </div>
+
+                <div class="mb-3 roles">
+                    <h5 class="mb-1 px-2">Bachelor of Business Administration&#58; Kennesaw State University</h5>
+                    <span class="mb-5 px-2 fs-6">Aug 2014 &#8210; May 2018</span>
+                    <p class="pt-1 px-2">Hooty Hoo!</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
               <a href="https://joseph-brannen.github.io/fewd-unit-7-project/" target="_blank">
                 <img src="icons/dashboard.png" class="img-fluid" id="image-one" alt="web dashboard">
               </a>
@@ -131,24 +190,8 @@
           </div>
         </div>
     </div>
-    
-    <div id="separate"></div>
-    <footer class="mt-3 row mb-3" id="contact">
-        <h2 class="text-center mb-4 mt-3 fs-1">Contact</h2>
-        <p class="col-12 col-md-8 col-lg-6 mx-auto text-center mt-1 fs-6">Trying to summon me? Fill out the form or use one of the links below.</p>
-        <form action="https://formspree.io/f/xdoqbwqo" method="POST">
-            <div id="form-field" class="mb-5 col-12 col-md-8 col-lg-6 mx-auto mt-3">
-                <input id="name-input" type="text" class="form-control mb-2" name="name" placeholder="Name" autocomplete="off">
-                <input id="email-input" type="email" class="form-control mb-2" name="email" placeholder="Email" autocomplete="off">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Message" autocomplete="off"></textarea>
-                <div class="col-12 row mt-3">
-                    <p id="error-message" class="d-inline col-8 me-auto"></p>
-                    <button id="submitbtn" class="btn btn-primary d-inline col-4 text-uppercase fs-6 text-right" type="submit">Submit</button>
-                </div>
-            </div>
-        </form>   
-    </footer>
     </main>
+    -->
 
       <div id="social" class="text-center pb-4 pt-4 container-fluid">
         <a href="https://www.linkedin.com/in/josephbrannen/" target="_blank">
