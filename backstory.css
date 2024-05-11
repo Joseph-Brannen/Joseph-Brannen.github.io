@@ -2,20 +2,9 @@
     scroll-padding-top: 6rem;
 }
 
-/*
 body {
-    background: linear-gradient(-45deg, rgba(13, 27, 42, 1) 60%, rgba(85, 255, 170, .3));
-}
-*/
-
-/*
-body {
-    background: linear-gradient(-45deg, rgba(13, 27, 42, 1) 60%, rgba(13, 27, 42, .8) 85%, rgba(13, 27, 42, .6));
-}
-*/
-
-body {
-    background: radial-gradient(rgb(23, 66, 45), rgba(13, 27, 42, 1));
+    background-color: #0d1b2a; 
+    font-family: "Inter", sans-serif;
 }
 
 main {
@@ -36,22 +25,15 @@ main {
 
 .roles {
     padding: 1rem;
+    transition: transform 1s ease;
 }
 
-/*
 .roles:hover {
-    background-color: rgba(85, 255, 170, .1);
-    border: 1px solid  rgba(85, 255, 170, .3);
-
-    background-color: rgba(255, 255, 255, .2);
-    border: 1px solid  rgba(255, 255, 255, .4);
-
-    background-color: rgba(13, 27, 42, .3);
-    border: 1px solid  rgba(13, 27, 42, 1);
-
+    background-color: rgba(255, 255, 255, .1);
+    border: 1px solid  rgba(255, 255, 255, .3);
     border-radius: 8px;
+    transform: scale(1.01)
 }
-*/
 
 .roles h5 {
     color: rgba(255, 255, 255, 1);
