@@ -1,0 +1,29 @@
+/* first = 10, second = 20, third = 30, fourth = 40, etc. */
+.mustbecustomoneach {
+    top: 10%;
+    left: 3%;
+    animation: 400s-500s linear infinite alternate motion;
+} 
+
+
+/* customize per set of 10*/
+@keyframes motion80 {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(50vw, 30vh);
+    }
+    40% {
+        transform: translate(-80vw, 30vh);
+    }
+    60% {
+        transform: translate(23vw, -14vh);
+    }
+    80% {
+        transform: translate(-80vw, 52vh);
+    }
+    100% {
+        transform: translate(32vw, -25vh);
+    }
+}
