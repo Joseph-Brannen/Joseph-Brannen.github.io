@@ -2,10 +2,24 @@
     scroll-padding-top: 6rem;
 }
 
+/*
 body {
-    background-color: #0d1b2a; 
+    background: radial-gradient(rgb(23, 66, 45), rgba(13, 27, 42, 1));
     font-family: "Inter", sans-serif;
 }
+*/
+
+body {
+    background: linear-gradient(-45deg, rgba(13, 27, 42, 1) 50%, rgba(85, 255, 170, .3));
+    background-color: #0d1b2a;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+
+
+
 
 main {
     padding-top: 5vh;
