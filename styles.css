@@ -100,17 +100,11 @@ main {
 
 .img-anchor {
     text-decoration: none;
+    color: rgba(85, 255, 170, .5);
 }
 
-#btnone,
-#btntwo,
-#btnthree,
-#btnfour,
-#btnfive,
-#btnsix,
-#btnseven,
-#btneight,
-#submitbtn {
+#submitbtn,
+.img-anchor {
     height: fit-content;
     width: fit-content;
     background-color: rgba(13, 27, 42, .1);
@@ -122,15 +116,8 @@ main {
     text-align: center;
 }
 
-#btnone:hover,
-#btntwo:hover,
-#btnthree:hover,
-#btnfour:hover,
-#btnfive:hover,
-#btnsix:hover,
-#btnseven:hover,
-#btneight:hover,
-#submitbtn:hover {
+#submitbtn:hover,
+.img-anchor:hover {
     background-color: rgba(85, 255, 170, .1);
 }
 
@@ -270,14 +257,7 @@ svg:hover {
 
 /*/////////////////////////////// PARTICLES ////////////////////////////*/
 @media (min-width: 320px) and (max-width: 340px) {
-    #btnone,
-    #btntwo,
-    #btnthree,
-    #btnfour,
-    #btnfive,
-    #btnsix,
-    #btnseven,
-    #btneight,
+    .img-anchor,
     #submitbtn {
         padding: .5rem;
         margin: 0rem;
@@ -285,10 +265,10 @@ svg:hover {
 }
 
 
+
+
+
 @media (min-width: 768px) {
-
-
-
 body {
     background: linear-gradient(-45deg, rgba(13, 27, 42, 1) 69%, rgba(85, 255, 170, .3));
     background-color: #0d1b2a;
