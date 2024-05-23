@@ -259,6 +259,67 @@ svg:hover {
 
 
 
+/* ///////////////// BACKSTORY HTML PAGE STYLING //////////////////////// */
+#backstory-html {
+    scroll-padding-top: 9rem;
+}
+
+#backstory-body {
+    background: linear-gradient(-45deg, rgba(13, 27, 42, 1) 70%, rgba(85, 255, 170, .3));
+    background-color: #0d1b2a;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+#backstory-main {
+    padding-top: 5vh;
+}
+
+
+
+#about h1,
+#resume h4 {
+  color: white;  
+}
+
+.para {
+    padding: 1rem;
+    color: rgba(255, 255, 255, .8)
+}
+
+
+
+.roles {
+    padding: 1rem;
+    transition: transform 1s ease;
+}
+
+.roles:hover {
+    background-color: rgba(255, 255, 255, .1);
+    border: 1px solid  rgba(255, 255, 255, .3);
+    border-radius: 8px;
+    transform: scale(1.01)
+}
+
+.roles h5 {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+span {
+    color: rgba(255, 255, 255, .9);
+}
+
+#resume p {
+    color: rgba(255, 255, 255, .8); 
+    font-size: .9rem;
+}
+
+
+
+
 /*/////////////////////////////// PARTICLES ////////////////////////////*/
 @media (min-width: 320px) and (max-width: 340px) {
     .img-anchor,
@@ -277,6 +338,11 @@ body {
     background: linear-gradient(-45deg, rgba(13, 27, 42, 1) 69%, rgba(85, 255, 170, .3));
     background-color: #0d1b2a;
 }
+
+#backstory-body {
+    background: linear-gradient(-45deg, rgba(13, 27, 42, 1) 65%, rgba(85, 255, 170, .3));
+    background-color: #0d1b2a;
+} 
 
 
 .particle-container,
@@ -3169,6 +3235,11 @@ body {
 @media (min-width: 1200px) {
     body {
         background: linear-gradient(-45deg, rgba(13, 27, 42, 1) 68%, rgba(85, 255, 170, .3));
+        background-color: #0d1b2a;
+    }
+
+    #backstory-body {
+        background: linear-gradient(-45deg, rgba(13, 27, 42, 1) 55%, rgba(85, 255, 170, .3));
         background-color: #0d1b2a;
     }
 }
