@@ -107,11 +107,11 @@ main {
 .img-anchor {
     height: fit-content;
     width: fit-content;
-    background-color: rgba(13, 27, 42, .1);
+    background-color: rgba(13, 27, 42, .3);
     padding: .5rem 1rem;
-    border: 1px solid rgba(85, 255, 170, .5);
+    border: 1px solid rgba(85, 255, 170, .7);
     border-radius: 10px;
-    color: rgba(85, 255, 170, .5);
+    color: rgba(85, 255, 170, .7);
     letter-spacing: 1px;
     text-align: center;
 }
