@@ -1,79 +1,41 @@
-const form = document.querySelector('form');
-const formDiv = document.getElementById('form-field');
 const username = document.getElementById('name-input');
 const email = document.getElementById('email-input');
 const message = document.querySelector('textarea');
 const error = document.getElementById('error-message');
 const button = document.getElementById('submitbtn');
 
-formDiv.addEventListener( 'click', (e) => {
-  username.text = '';
-  email.text = '';
-  message.text = '';
-  if ( button === e.target && username.value !== '' && email.value !== '' && message.value !== '') {
-    error.innerHTML = "Message submitted.";
-  } else if ( button === e.target && username.value === '' && email.value !== '' && message.value !== '' ) {
+
+
+let errors; // Variable to store error messages
+
+/**
+ * Validates the input element and displays an error message if the value is empty.
+ * @param {HTMLElement} element - The input element to validate.
+ * @param {string} message - The error message to display.
+*/
+const validateInput = (element, message) => {
+  if(element.value === ''){
+    element.style.borderLeftColor = 'red';
+    element.style.borderLeftWidth = '2px';
+    errors += `${message}<br>`;
+  } else { 
+    element.style.borderLeftColor = 'rgba(255, 255, 255, .3)';
+    element.style.borderLeftWidth = '1px';
+  }
+}
+
+button.addEventListener( 'click', (e) => {
+  // clear error message when user submits the form again
+  errors = '';
+
+  // validate the input fields
+  validateInput(username, 'Please enter your name.');
+  validateInput(email, 'Please enter your email.');
+  validateInput(message, 'Please enter your message.');
+
+  // prevent submission and display error message if there are errors
+  if(errors !== ''){
+    error.innerHTML = errors;
     e.preventDefault();
-    error.innerHTML = "Please enter your name.";
-    username.style.borderLeftColor = 'red';
-    username.style.borderLeftWidth = '2px';
-    email.style.borderLeftColor = 'rgba(255, 255, 255, .3)';
-    email.style.borderLeftWidth = '1px';
-    message.style.borderLeftColor = 'rgba(255, 255, 255, .3)';
-    message.style.borderLeftWidth = '1px';
-  } else if ( button === e.target && username.value !== '' && email.value === '' && message.value !== '' ) {
-    e.preventDefault();
-    error.innerHTML = "Please enter your email.";
-    email.style.borderLeftColor = 'red';
-    email.style.borderLeftWidth = '2px';
-    username.style.borderLeftColor = 'rgba(255, 255, 255, .3)';
-    username.style.borderLeftWidth = '1px';
-    message.style.borderLeftColor = 'rgba(255, 255, 255, .3)';
-    message.style.borderLeftWidth = '1px';
-  } else if ( button === e.target && username.value !== '' && email.value !== '' && message.value === '' ) {
-    e.preventDefault();
-    error.innerHTML = "Please enter your message.";
-    message.style.borderLeftColor = 'red';
-    message.style.borderLeftWidth = '2px';
-    username.style.borderLeftColor = 'rgba(255, 255, 255, .3)';
-    username.style.borderLeftWidth = '1px';
-    email.style.borderLeftColor = 'rgba(255, 255, 255, .3)';
-    email.style.borderLeftWidth = '1px';
-  } else if ( button === e.target && username.value === '' && email.value === '' && message.value !== '' ) {
-    e.preventDefault();
-    error.innerHTML = "Please enter your name.<br>Please enter your email.";
-    username.style.borderLeftColor = 'red';
-    username.style.borderLeftWidth = '2px';
-    email.style.borderLeftColor = 'red';
-    email.style.borderLeftWidth = '2px';
-    message.style.borderLeftColor = 'rgba(255, 255, 255, .3)';
-    message.style.borderLeftWidth = '1px';
-  } else if ( button === e.target && username.value === '' && email.value === '' && message.value === '' ) {
-    e.preventDefault();
-    error.innerHTML = "Please enter your name.<br>Please enter your email.<br>Please enter your message.";
-    username.style.borderLeftColor = 'red';
-    username.style.borderLeftWidth = '2px';
-    email.style.borderLeftColor = 'red';
-    email.style.borderLeftWidth = '2px';
-    message.style.borderLeftColor = 'red';
-    message.style.borderLeftWidth = '2px';
-  } else if ( button === e.target && username.value !== '' && email.value === '' && message.value === '' ) {
-    e.preventDefault();
-    error.innerHTML = "Please enter your email.<br>Please enter your message.";
-    email.style.borderLeftColor = 'red';
-    email.style.borderLeftWidth = '2px';
-    message.style.borderLeftColor = 'red';
-    message.style.borderLeftWidth = '2px';
-    username.style.borderLeftColor = 'rgba(255, 255, 255, .3)';
-    username.style.borderLeftWidth = '1px';
-  } else if ( button === e.target && username.value === '' && email.value !== '' && message.value === '' ) {
-    e.preventDefault();
-    error.innerHTML = "Please enter your name.<br>Please enter your message.";
-    username.style.borderLeftColor = 'red';
-    username.style.borderLeftWidth = '2px';
-    message.style.borderLeftColor = 'red';
-    message.style.borderLeftWidth = '2px';
-    email.style.borderLeftColor = 'rgba(255, 255, 255, .3)';
-    email.style.borderLeftWidth = '1px';
   }
 });
